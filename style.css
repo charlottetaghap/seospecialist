@@ -265,6 +265,13 @@ section { padding: 90px 0; }
 .legend li::before { content: ""; width: 14px; height: 14px; border: 2px solid currentColor; border-radius: 3px; background: radial-gradient(currentColor 38%, transparent 40%); }
 .l1 { color: #2fbf4f; } .l2 { color: #e3b83a; } .l3 { color: #8fd9a0; } .l4 { color: #fff; }
 
+/* ---------- Four cards ---------- */
+.four { border-top: 1px solid var(--border); padding-top: 80px; }
+.four__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.tall { padding: 28px 24px; }
+.tall h4 { font-size: 0.95rem; margin-bottom: 12px; }
+.tall p { font-size: 0.78rem; color: var(--muted); }
+
 /* ---------- Portfolio ---------- */
 .portfolio { border-top: 1px solid var(--border); }
 .case { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; padding: 44px; }
