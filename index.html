@@ -4,18 +4,285 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Name | Portfolio</title>
-  <meta name="description" content="Short description of what you do.">
+  <meta name="description" content="Portfolio of Your Name. Describe what you do and who you help in one sentence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Your title or tagline</p>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="logo"><span class="logo__mark">&gt;_</span> YourName</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm">Get in Touch</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
   </header>
-  <section id="about"><h2>About</h2><p>A short bio.</p></section>
-  <section id="projects"><h2>Projects</h2>
-    <article><h3>Project name</h3><p>What it is and the result.</p></article>
-  </section>
-  <section id="contact"><h2>Contact</h2><p>you@email.com</p></section>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>I Create World Advancing Work With Vision and Passion</h1>
+          <p>I help businesses build the systems and content that pull their performance levers and grow.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn">Get started now <span>&rarr;</span></a>
+            <a href="#about" class="link">Learn more information <span>&rarr;</span></a>
+          </div>
+          <div class="trusted">
+            <div class="avatars"><i></i><i></i><i></i><i></i></div>
+            <div>
+              <small>Trusted by industry experts</small>
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <b>4.9</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__cards">
+          <div class="card hero__card hero__card--tall">
+            <h3>$500K</h3>
+            <p>Saved Through<br>Resource Optimization</p>
+            <div class="shape"></div>
+          </div>
+          <div class="hero__col">
+            <!-- Replace with your photo: <img src="images/me.jpg" alt="Your Name"> -->
+            <div class="card hero__photo"></div>
+            <div class="card hero__card hero__card--small">
+              <h3>10+</h3>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+          <div class="card pill">100% Quality Work</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <section class="logos">
+      <div class="container logos__row">
+        <span>Tool One</span><span>Tool Two</span><span>Tool Three</span>
+        <span>Tool Four</span><span>Tool Five</span><span>Tool Six</span>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <h2>Transforming Ideas Into Impact</h2>
+        <div class="stat"><strong>500+</strong><span>Successful projects</span></div>
+        <div class="stat"><strong>60%</strong><span>Faster results</span></div>
+        <div class="stat"><strong>120%</strong><span>Average ROI increase</span></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="about">
+      <div class="container features__grid">
+        <div>
+          <h2>Discover All The Powerful Features I Offer</h2>
+          <p class="muted">Unlock powerful skills designed to streamline workflows, enhance collaboration, spark innovation, and help your ideas reach the world faster.</p>
+          <div class="mini-cards">
+            <div class="card mini">
+              <div class="icon">&#9670;</div>
+              <h4>Mobile Applications</h4>
+              <p>Innovative apps carefully tailored to your special needs.</p>
+            </div>
+            <div class="card mini">
+              <div class="icon">&#9776;</div>
+              <h4>Integration With Devices</h4>
+              <p>Seamless integration designed to simplify your experience.</p>
+            </div>
+            <div class="card mini">
+              <div class="icon">&#9635;</div>
+              <h4>Billing Systems</h4>
+              <p>Smart systems built to simplify financial management.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card feature-big">
+          <div class="blob"></div>
+          <h3>Where Privacy Meets Performance Excellence</h3>
+          <p>Designed to provide privacy, reliability, and security for modern businesses everywhere.</p>
+          <a href="#contact" class="btn btn--sm">Get Started <span>&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES BENTO -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>What I provide</h2>
+          <p class="muted">I help build the operating system for data-driven companies to find and pull their performance levers.</p>
+        </div>
+
+        <div class="bento">
+          <div class="card b b--wide b--photo">
+            <div class="b__text">
+              <h4>Optimizing Business Performance</h4>
+              <p>An intelligent system designed for data-driven teams to measure, manage, and amplify performance across all operations.</p>
+              <a href="#contact" class="more">Get Started Now &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card b b--wave">
+            <div class="wave"></div>
+            <span class="tag">AI</span>
+            <h4>Artificial Intelligence</h4>
+            <p>Comprehensive infrastructure for the data-driven future.</p>
+            <a href="#contact" class="more">More Information &rarr;</a>
+          </div>
+
+          <div class="card b b--ui">
+            <h4>UI/UX Breakdown</h4>
+            <p>We design the core infrastructure for the data-driven future.</p>
+            <a href="#contact" class="more">More Information &rarr;</a>
+            <div class="orb"></div>
+          </div>
+
+          <div class="card b b--tech">
+            <div class="glass">
+              <h4>Tech Stack Analysis</h4>
+              <p>Comprehensive insights to enhance your software architecture efficiency.</p>
+              <a href="#contact" class="more">More Information &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card b b--score">
+            <h4>Security Assessment</h4>
+            <strong class="big">100%</strong>
+            <div class="b__foot">
+              <p>We design the core infrastructure for the data-driven future.</p>
+              <div class="avatars"><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="showcase" id="projects">
+      <div class="container showcase__grid">
+        <div class="gallery">
+          <!-- Replace each .ph with <img src="images/project1.jpg" alt="Project"> -->
+          <div class="ph ph--tall"></div>
+          <div class="ph ph--a"></div>
+          <div class="ph ph--b"></div>
+        </div>
+        <div>
+          <h2>Turning Complex Problems into Powerful Solutions</h2>
+          <p class="muted">From APIs to full-stack apps, build scalable, secure, and high-performing products crafted with precision and innovation.</p>
+          <hr>
+          <div class="two-col">
+            <div>
+              <h4>Programming Solutions</h4>
+              <p>Tailored solutions for performance and scalability.</p>
+              <a href="#contact" class="more">More Information &rarr;</a>
+            </div>
+            <div>
+              <h4>Secure Infrastructure</h4>
+              <p>Ensure stability, reliability, and data security across systems.</p>
+              <a href="#contact" class="more">More Information &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUR CARDS -->
+    <section class="four">
+      <div class="container four__grid">
+        <div class="card tall">
+          <div class="icon">&#10022;</div>
+          <h4>Powerful APIs</h4>
+          <p>Build smarter systems using robust, well-documented APIs that simplify integrations and accelerate development processes.</p>
+          <a href="#contact" class="more">Get Started Now &rarr;</a>
+        </div>
+        <div class="card tall">
+          <div class="icon">&#9679;</div>
+          <h4>Secure &amp; isolated</h4>
+          <p>Maintain complete control with isolated infrastructure designed to safeguard sensitive information and prevent cross-environment risks.</p>
+          <a href="#contact" class="more">Get Started Now &rarr;</a>
+        </div>
+        <div class="card tall">
+          <div class="icon">&#9635;</div>
+          <h4>Ready for scale</h4>
+          <p>Scale your applications seamlessly with architecture optimized for speed, reliability, and evolving business requirements.</p>
+          <a href="#contact" class="more">Get Started Now &rarr;</a>
+        </div>
+        <div class="card tall">
+          <div class="icon">&#9670;</div>
+          <h4>Ongoing context</h4>
+          <p>Maintain seamless continuity with real-time context that persists across sessions, workflows, and collaborative environments.</p>
+          <a href="#contact" class="more">Get Started Now &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT CTA -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="card cta__box">
+          <div class="cta__text">
+            <h2>Dedicated Support Available in Every Language</h2>
+            <p>Dedicated experts available 24/7 for clear communication, quick assistance, and outstanding worldwide experiences.</p>
+            <ul class="checks">
+              <li>Expert guidance for deployment and integration</li>
+              <li>Fast, reliable support for technical challenges</li>
+              <li>Continuous improvement through feedback and collaboration</li>
+            </ul>
+            <a href="mailto:you@email.com" class="btn">Get Started Now <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#home" class="logo"><span class="logo__mark">&gt;_</span> YourName</a>
+        <p class="muted small">Subscribe to receive news, guides and product updates.</p>
+        <form class="subscribe" onsubmit="return false;">
+          <input type="email" placeholder="Email address *" aria-label="Email address">
+          <button class="btn btn--sm" type="submit">Subscribe Now</button>
+        </form>
+      </div>
+      <div class="footer__mid">
+        <nav>
+          <a href="#home" class="active">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </nav>
+        <span class="small">Your City, Your Country</span>
+      </div>
+      <p class="copy">&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="totop" aria-label="Back to top">&uarr;</a>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
