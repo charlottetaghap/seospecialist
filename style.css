@@ -247,6 +247,7 @@ section { padding: 90px 0; }
 .tl__icon { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--green); background: var(--bg); display: grid; place-items: center; position: relative; z-index: 1; }
 .tl__icon svg { width: 22px; height: 22px; fill: none; stroke: var(--green); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .tl__date { display: block; color: var(--green); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.tl__tag { font-style: normal; margin-left: 8px; padding: 2px 8px; border: 1px solid var(--green); border-radius: 999px; font-size: 0.62rem; }
 .tl__item h4 { font-size: 1rem; line-height: 1.3; margin-bottom: 4px; }
 .tl__co { display: block; font-size: 0.78rem; color: #d7ded8; margin-bottom: 8px; }
 .tl__item p { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
