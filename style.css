@@ -273,6 +273,22 @@ section { padding: 90px 0; }
 .case__stat span { font-size: 0.78rem; color: var(--muted); }
 @media (max-width: 640px) { .case { padding: 24px; gap: 28px; } .case__stat { padding: 16px 14px; } }
 
+/* ---------- Projects page ---------- */
+.page-hero { padding: 70px 0 30px; }
+.page-hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 16px; }
+.page-hero__intro { max-width: 640px; }
+.projects-page { padding-top: 30px; }
+.projects-page__h { margin: 64px 0 24px; font-size: 1.6rem; }
+.proj-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.proj { padding: 28px 24px; display: flex; flex-direction: column; }
+.proj h3 { font-size: 1.1rem; line-height: 1.3; margin-bottom: 8px; }
+.proj__meta { font-size: 0.74rem; color: var(--green); margin-bottom: 18px; }
+.proj__metrics { display: flex; gap: 24px; margin-bottom: 16px; }
+.proj__metrics strong { display: block; font-size: 1.7rem; color: var(--green); line-height: 1.1; }
+.proj__metrics span { font-size: 0.72rem; color: var(--muted); }
+.proj__spark { width: 100%; height: 70px; margin-bottom: 16px; }
+.proj .checks { margin-top: auto; }
+
 /* ---------- CTA ---------- */
 .cta { padding-top: 20px; }
 .cta__box {
@@ -318,7 +334,7 @@ section { padding: 90px 0; }
 @media (max-width: 1000px) {
   .hero__grid, .features__grid, .section-head, .case, .exp__grid { grid-template-columns: 1fr; }
   .stats__grid { grid-template-columns: 1fr 1fr; }
-  .four__grid, .scope-grid { grid-template-columns: 1fr 1fr; }
+  .four__grid, .scope-grid, .proj-grid { grid-template-columns: 1fr 1fr; }
   .process__list { grid-template-columns: 1fr 1fr; }
   .footer__top { grid-template-columns: 1fr; }
 }
@@ -333,7 +349,7 @@ section { padding: 90px 0; }
     border-bottom: 1px solid var(--border);
   }
   .nav__links.open { display: flex; }
-  .mini-cards, .four__grid, .scope-grid, .process__list { grid-template-columns: 1fr; }
+  .mini-cards, .four__grid, .scope-grid, .process__list, .proj-grid { grid-template-columns: 1fr; }
   .process__list::before { display: none; }
   .hero__cards { grid-template-columns: 1fr; }
   .hero__card--tall { min-height: 440px; }
