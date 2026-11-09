@@ -257,6 +257,20 @@ section { padding: 90px 0; }
 .tall h4 { font-size: 0.95rem; margin-bottom: 12px; }
 .tall p { font-size: 0.78rem; color: var(--muted); }
 
+/* ---------- Portfolio ---------- */
+.portfolio { border-top: 1px solid var(--border); }
+.case { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; padding: 44px; }
+.case__cta { margin-top: 8px; }
+.case__body h3 { font-size: 1.5rem; margin: 14px 0 10px; }
+.case__meta { font-size: 0.8rem; color: var(--green); margin-bottom: 16px; }
+.case__body .muted { margin-bottom: 22px; }
+.case .checks { margin-bottom: 24px; }
+.case__stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: center; }
+.case__stat { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-radius: 12px; padding: 22px 18px; }
+.case__stat strong { display: block; color: var(--green); font-size: clamp(1.3rem, 2.2vw, 1.8rem); line-height: 1.15; margin-bottom: 6px; }
+.case__stat span { font-size: 0.78rem; color: var(--muted); }
+@media (max-width: 640px) { .case { padding: 24px; gap: 28px; } .case__stat { padding: 16px 14px; } }
+
 /* ---------- CTA ---------- */
 .cta { padding-top: 20px; }
 .cta__box {
@@ -300,7 +314,7 @@ section { padding: 90px 0; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
-  .hero__grid, .features__grid, .showcase__grid, .section-head { grid-template-columns: 1fr; }
+  .hero__grid, .features__grid, .showcase__grid, .section-head, .case { grid-template-columns: 1fr; }
   .stats__grid { grid-template-columns: 1fr 1fr; }
   .four__grid { grid-template-columns: 1fr 1fr; }
   .bento > * { grid-column: span 6 !important; }
