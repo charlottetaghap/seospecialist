@@ -374,3 +374,16 @@ section { padding: 90px 0; }
   .footer__mid, .footer__mid nav { flex-direction: column; align-items: flex-start; }
   .logos__row { justify-content: center; }
 }
+
+/* AI answer demo in feature card */
+.feature-big .ai-demo { position: absolute; top: 28px; left: 24px; right: 24px; text-align: left; }
+.ai-demo__q { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,.03); font-size: .72rem; color: var(--muted); }
+.ai-demo__q span { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex: none; box-shadow: 0 0 10px var(--green); }
+.ai-demo__a { margin-top: 14px; padding: 16px; border: 1px solid var(--border); border-radius: 14px; background: radial-gradient(circle at 20% 0%, rgba(47,191,79,.16), rgba(255,255,255,.02) 70%); }
+.ai-demo__a i { display: block; height: 7px; border-radius: 4px; background: rgba(255,255,255,.14); margin-bottom: 9px; }
+.ai-demo__src { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(47,191,79,.14); border: 1px solid rgba(47,191,79,.4); color: var(--green); font-size: .7rem; }
+.ai-demo__src b { display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: var(--green); color: #04130a; font-size: .6rem; }
+.ai-demo__src em { font-style: normal; opacity: .7; }
+.ai-demo__tags { display: flex; gap: 8px; margin-top: 14px; }
+.ai-demo__tags span { padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: .68rem; color: var(--text); }
+.feature-big h3 { margin-top: 250px; }
