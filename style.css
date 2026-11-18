@@ -226,8 +226,9 @@ section { padding: 90px 0; }
 .exp__intro { max-width: 760px; margin-bottom: 52px; }
 .exp__grid { display: grid; grid-template-columns: 1fr 1fr 0.9fr; gap: 40px; align-items: start; }
 .tl { list-style: none; position: relative; }
-.tl::before { content: ""; position: absolute; left: 25px; top: 26px; bottom: 60px; width: 2px; background: var(--brand-2); opacity: 0.55; }
-.tl__item { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 16px; margin-bottom: 38px; }
+.tl__item { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 16px; padding-bottom: 38px; }
+.tl__item:last-child { padding-bottom: 0; }
+.tl__item:not(:last-child)::before { content: ""; position: absolute; left: 25px; top: 52px; bottom: 0; width: 2px; background: var(--brand-2); opacity: 0.55; }
 .tl__icon { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--brand); background: var(--bg); display: grid; place-items: center; position: relative; z-index: 1; }
 .tl__icon svg { width: 22px; height: 22px; fill: none; stroke: var(--brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .tl__date { display: block; color: var(--brand); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
